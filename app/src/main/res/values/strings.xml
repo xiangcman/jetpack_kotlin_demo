@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Jetpack_Demo</string>
+    <string name="progress">进度</string>
+    <string name="title_activity_home">jetpack_demo</string>
+    <string name="title_home">主页</string>
+    <string name="title_dashboard">收藏</string>
+    <string name="title_notifications">我的</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

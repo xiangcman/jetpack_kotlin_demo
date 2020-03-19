@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+
+        <variable
+            name="pageViewModel"
+            type="com.single.jetpack_demo.viewmodel.PageViewModel" />
+
+        <import type="com.single.jetpack_demo.bean.NetWorkStatus" />
+
+        <import type="com.single.jetpack_demo.bean.NetWorkStatus.LOADING" />
+
+        <import type="com.single.jetpack_demo.bean.NetWorkStatus.SUCCESS" />
+
+        <import type="android.view.View" />
+    </data>
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:onRefreshListener="@{()->pageViewModel.refresh()}">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+</layout>
