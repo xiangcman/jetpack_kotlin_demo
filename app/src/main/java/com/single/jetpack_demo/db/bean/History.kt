@@ -1,4 +1,4 @@
-package com.single.jetpack_demo.db
+package com.single.jetpack_demo.db.bean
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

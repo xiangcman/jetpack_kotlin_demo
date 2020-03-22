@@ -1,8 +1,8 @@
 package com.single.jetpack_demo.respository
 
 import androidx.lifecycle.LiveData
-import androidx.paging.toLiveData
-import com.single.jetpack_demo.db.*
+import com.single.jetpack_demo.db.bean.History
+import com.single.jetpack_demo.db.dao.HistoryDao
 
 class HistoryRespository private constructor(private val historyDao: HistoryDao) {
     companion object {

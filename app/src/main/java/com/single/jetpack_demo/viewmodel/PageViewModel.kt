@@ -3,8 +3,8 @@ package com.single.jetpack_demo.viewmodel
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.single.jetpack_demo.db.Collect
-import com.single.jetpack_demo.db.History
+import com.single.jetpack_demo.db.bean.Collect
+import com.single.jetpack_demo.db.bean.History
 import com.single.jetpack_demo.respository.PageRespository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

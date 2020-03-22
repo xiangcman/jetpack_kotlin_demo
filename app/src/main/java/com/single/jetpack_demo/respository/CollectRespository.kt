@@ -1,9 +1,9 @@
 package com.single.jetpack_demo.respository
 
 import androidx.paging.toLiveData
-import com.single.jetpack_demo.db.Collect
-import com.single.jetpack_demo.db.CollectDao
-import com.single.jetpack_demo.db.CollectData
+import com.single.jetpack_demo.db.bean.Collect
+import com.single.jetpack_demo.db.dao.CollectDao
+import com.single.jetpack_demo.bean.CollectData
 
 class CollectRespository private constructor(private val collectDao: CollectDao) {
     companion object {

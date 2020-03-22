@@ -7,7 +7,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.single.jetpack_demo.R
 import com.single.jetpack_demo.databinding.ItemHistoryBinding
-import com.single.jetpack_demo.db.History
+import com.single.jetpack_demo.db.bean.History
 
 class HistoryAdapter(val context: Context, val datas: List<History>) :
     RecyclerView.Adapter<HistoryAdapter.ViewHolder>() {

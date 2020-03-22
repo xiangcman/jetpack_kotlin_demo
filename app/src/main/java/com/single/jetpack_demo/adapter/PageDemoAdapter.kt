@@ -9,8 +9,8 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.hankkin.jetpack_note.data.bean.Gank
 import com.single.jetpack_demo.databinding.ItemPageDemoBinding
-import com.single.jetpack_demo.db.Collect
-import com.single.jetpack_demo.db.History
+import com.single.jetpack_demo.db.bean.Collect
+import com.single.jetpack_demo.db.bean.History
 import com.single.jetpack_demo.viewmodel.PageViewModel
 import com.single.jetpack_demo.web.CommonWebActivity
 
@@ -61,7 +61,6 @@ class PageDemoAdapter(val viewModel: PageViewModel) :
         holder.bind(item) {
             item?.run {
                 //保存记录
-
                 viewModel.addHistory(History.getThis(item!!))
                 CommonWebActivity.loadUrl(it, url, desc)
             }

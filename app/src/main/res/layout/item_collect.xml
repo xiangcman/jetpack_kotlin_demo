@@ -11,7 +11,7 @@
 
         <variable
             name="collect"
-            type="com.single.jetpack_demo.db.Collect" />
+            type="com.single.jetpack_demo.db.bean.Collect" />
 
         <variable
             name="collectViewModel"

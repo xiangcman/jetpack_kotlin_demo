@@ -5,10 +5,10 @@ import androidx.paging.LivePagedListBuilder
 import androidx.paging.PagedList
 import com.hankkin.jetpack_note.data.bean.Gank
 import com.single.jetpack_demo.bean.GankData
-import com.single.jetpack_demo.db.Collect
-import com.single.jetpack_demo.db.CollectDao
-import com.single.jetpack_demo.db.History
-import com.single.jetpack_demo.db.HistoryDao
+import com.single.jetpack_demo.db.bean.Collect
+import com.single.jetpack_demo.db.dao.CollectDao
+import com.single.jetpack_demo.db.bean.History
+import com.single.jetpack_demo.db.dao.HistoryDao
 import com.single.jetpack_demo.paging.GankSourceFactory
 
 class PageRespository private constructor(

@@ -54,6 +54,7 @@
         <activity android:name=".web.CommonWebActivity" />
         <activity android:name=".activity.HistoryActivity" />
         <activity android:name=".activity.AboutMeActivity" />
+        <activity android:name=".activity.WorkManagerActivity" />
     </application>
 
 </manifest>

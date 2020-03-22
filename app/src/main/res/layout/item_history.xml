@@ -6,7 +6,7 @@
 
         <variable
             name="history"
-            type="com.single.jetpack_demo.db.History" />
+            type="com.single.jetpack_demo.db.bean.History" />
 
     </data>
 

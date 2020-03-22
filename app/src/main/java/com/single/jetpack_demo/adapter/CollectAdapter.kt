@@ -8,7 +8,7 @@ import androidx.paging.PagedListAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.single.jetpack_demo.databinding.ItemCollectBinding
-import com.single.jetpack_demo.db.Collect
+import com.single.jetpack_demo.db.bean.Collect
 import com.single.jetpack_demo.viewmodel.CollectViewModel
 import com.single.jetpack_demo.web.CommonWebActivity
 

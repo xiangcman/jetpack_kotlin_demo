@@ -1,7 +1,6 @@
 package com.single.jetpack_demo.activity
 
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
@@ -9,10 +8,9 @@ import com.single.jetpack_demo.BaseActivity
 import com.single.jetpack_demo.R
 import com.single.jetpack_demo.adapter.HistoryAdapter
 import com.single.jetpack_demo.databinding.ActivityHistoryBinding
-import com.single.jetpack_demo.db.History
+import com.single.jetpack_demo.db.bean.History
 import com.single.jetpack_demo.utils.setupToolBar
 import com.single.jetpack_demo.viewmodel.HistoryViewModel
-import kotlinx.android.synthetic.main.activity_article_detail.*
 import kotlinx.android.synthetic.main.activity_history.*
 import kotlinx.android.synthetic.main.activity_history.toolbar
 

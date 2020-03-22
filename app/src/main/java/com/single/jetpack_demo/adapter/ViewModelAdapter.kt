@@ -2,6 +2,9 @@ package com.single.jetpack_demo.adapter
 
 import android.content.DialogInterface
 import android.content.Intent
+import android.graphics.Color
+import android.graphics.drawable.GradientDrawable
+import android.graphics.drawable.ShapeDrawable
 import android.view.View
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
@@ -77,5 +80,15 @@ object ViewModelAdapter {
     fun showTime(view: TextView, date: Date) {
         val simpleDateFormat = SimpleDateFormat("yyyy-MM-dd hh:mm:ss")
         view.setText(simpleDateFormat.format(date))
+    }
+
+    @JvmStatic
+    @BindingAdapter("flowBack")
+    fun flowBack(view: TextView, color: String) {
+        val shapeDrawable = GradientDrawable()
+        shapeDrawable.cornerRadius = 10f
+        shapeDrawable.setColor(Color.parseColor(color))
+        view.background=shapeDrawable
+
     }
 }

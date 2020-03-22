@@ -1,9 +1,8 @@
-package com.single.jetpack_demo.db
+package com.single.jetpack_demo.db.dao
 
-import androidx.lifecycle.LiveData
 import androidx.paging.DataSource
 import androidx.room.*
-import org.jetbrains.annotations.NotNull
+import com.single.jetpack_demo.db.bean.Collect
 
 @Dao
 interface CollectDao {

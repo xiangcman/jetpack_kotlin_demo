@@ -10,6 +10,7 @@ import androidx.databinding.DataBindingUtil
 import com.single.jetpack_demo.R
 import com.single.jetpack_demo.activity.AboutMeActivity
 import com.single.jetpack_demo.activity.HistoryActivity
+import com.single.jetpack_demo.activity.WorkManagerActivity
 import com.single.jetpack_demo.databinding.FragmentMeBinding
 import kotlinx.android.synthetic.main.fragment_me.*
 
@@ -31,6 +32,9 @@ class MeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         browse_history.setOnClickListener {
             startActivity(Intent(requireContext(), HistoryActivity::class.java))
+        }
+        workmanager.setOnClickListener {
+            startActivity(Intent(requireContext(), WorkManagerActivity::class.java))
         }
         about_me.setOnClickListener {
             startActivity(Intent(requireContext(), AboutMeActivity::class.java))
